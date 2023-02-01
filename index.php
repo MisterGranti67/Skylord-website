@@ -30,18 +30,22 @@
         </div>
       </div>
       <div class="header-menu">
-        <ul class="menu">
-          <li>accueil</li>
-          <li>vote et gagne</li>
-          <li>boutique</li>
-          <li>stats</li>
-          <li>banlist</li>
-          <li>règles</li>
-          <li>crypto</li>
-        </ul>
+        <div class="container">
+            <ul class="menu">
+              <li>accueil</li>
+              <li>vote et gagne</li>
+              <li>boutique</li>
+              <li>stats</li>
+              <li>banlist</li>
+              <li>règles</li>
+              <li>crypto</li>
+            </ul>
+        </div>
       </div>
-      <div class="image-centre">
-        <img src="https://skylord.fr/skylord">
+      <div class="container">
+        <div class="image-centre">
+          <img src="https://skylord.fr/logo.png">
+        </div>
       </div>
     </div>
     <section class="actualite">
@@ -81,51 +85,59 @@
     </section>
     <section class="discord">
       <div class="container">
-        <div class="gauche">
-          <img src="img/wumpus.png">
-        </div>
-        <div class="droite">
-          <h1>Rejoins-nous ! Et créons un lien unique !</h1>
-          <p>Rejoignez une communauté de plusieurs milliers de personnes</p>
-
-          <p>Skylord est une communauté regroupant plusieurs milliers d’utilisateurs à travers toute la France C’est notre pôle principale, ce discord nous sert à annoncer les prochaines mises à jours, évènements sondages et même des concours exclusifs !</p>
-          <div class="bouton">
-            <a class="bouton">Rejoindre le discord</a>
+        <div class="acces-discord">
+          <div class="gauche">
+            <img src="../img/wumpus.png">
+          </div>
+          <div class="droite">
+            <h1>Rejoins-nous, et créons un lien unique !</h1>
+            <h2>Rejoignez une communauté de plusieurs milliers de personnes</h2>
+            <div class="margin"></div>
+            <p>Skylord est une communauté regroupant plusieurs milliers d’utilisateurs à travers toute la France.</p>
+            <p>C’est notre pôle principale, ce discord nous sert à annoncer les prochaines mises à jours, évènements sondages et même des concours exclusifs !</p>
+            <div class="bouton">
+              <a href="https://discord.gg/skylord" class="bouton">Rejoindre le discord</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </body>
-  <footer>
+  <footer id="footer">
     <div class="footer-menu">
       <div class="container">
-        <div class="gauche">
-          <a href="https://skylord.fr">
-            <img src="https://skylord.fr/logo.png">
-          </a>
+        <div class="total-haut-footer">
+          <div class="gauche">
+            <a href="https://skylord.fr">
+              <img src="https://skylord.fr/logo.png">
+            </a>
+          </div>
+          <div class="droite">
+            <ul class="menu">
+              <a href="https://skylord.fr/legale/"><li>Nos CGU</li></a>
+              <a href="https://skylord.fr/legale/CGV.php"><li>Nos CGV</li></a>
+              <a href="https://skylord.fr/legale/mentions-legales.php"><li>Mentions légales</li></a>
+              <a href="https://joueur.skylord.fr/vote"><li>Vote et Gagne</li></a>
+              <a href="https://joueur.skylord.fr/shop"><li>Boutique</li></a>
+            </ul>
+          </div>
         </div>
-        <div class="droite">
-          <ul class="menu">
-            <li>Nos CGU</li>
-            <li>Nos CGV</li>
-            <li>Mentions légales</li>
-            <li>Vote et Gagne</li>
-            <li>Boutique</li>
-          </ul>
-        </div>
-
       </div>
     </div>
     <div class="bas-footer">
       <div class="container">
-        <div class="gauche">
-          <h3>Skylord</h3>
-          <p>©(Copyright) 2022. Tous les droits réservés</p>
-        </div>
-        <div class="droite">
-          <!-- ICONE TWITTER -->
-          <!-- ICONE TIKTOK -->
-          <!-- ICONE DISCORD -->
+        <div class="total-bas-footer">
+          <div class="gauche">
+            <h1>Skylord</h1>
+            <p>©(Copyright) 2023. Tous les droits réservés</p>
+          </div>
+          <div class="droite">
+            <ul class="menu">
+              <li><a href="https://www.tiktok.com/@play.skylord.fr"><i class="fa-brands fa-tiktok"></i></a></li>
+              <li><a href="https://twitter.com/SkylordFR"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="https://discord.gg/skylord"><i class="fa-brands fa-discord"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
