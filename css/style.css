@@ -3,19 +3,26 @@
   border: 0;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto';
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
 }
-
+footer {
+  background-color: rgb(51,51,51);
+}
 .container {
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
-  padding-left: 153px;
-  padding-right: 153px;
 }
 
 .header {
   width: 100%;
   height: 684px;
+  background: url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header-haut {
@@ -35,10 +42,19 @@
 .header .gauche {
   float: left;
   width: 50%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: auto;
 }
 
 .header .droite {
-  margin-left: 50%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: auto;
+  right: 0;
+  float: right;
 }
 
 .count-joueur {
@@ -46,11 +62,10 @@
   margin-bottom: 8px;
   background-color: rgba(0,0,0,0.25);
   border-radius: 5px;
-  width: 79px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 16px;
-  padding-right: 16px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: auto;
 }
 
 .count-joueur p {
@@ -61,11 +76,18 @@
   line-height: 28px;
   color: #FFFFFF;
   position: relative;
-  margin-left: 16px;
+  margin-left: 8px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 16px;
 }
 .count-joueur i {
   color: #fff;
-  height: 18.58px;
+  height: 19.58px;
+  margin-left: 16px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  font-size: 16px;
 }
 
 .en-ligne {
@@ -75,6 +97,8 @@
   font-size: 24px;
   line-height: 28px;
   color: #fff;
+  margin-top: 15px;
+  margin-left: 8px;
 }
 
 .header-haut .bouton {
@@ -84,8 +108,6 @@
   padding-top: 8px;
   padding-bottom: 8px;
 
-  width: 100%;
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 800;
@@ -93,6 +115,8 @@
   line-height: 28px;
 
   color: #FFFFFF;
+  margin-top: 8px;
+  border-radius: 5px;
 }
 
 
@@ -109,7 +133,10 @@
   text-decoration: none;
   list-style-type: none;
 }
-.header-menu .menu li {
+.header-menu .menu a:nth-child(1) {
+  margin-left: 0px;
+}
+.header-menu .menu a {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 800;
@@ -117,14 +144,23 @@
   line-height: 28px;
   color: #fff;
   margin-left: 32px;
-  margin-right: 32px;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: color 300ms;
 }
+.header-menu .menu a:hover {
+  color: #A7A7A7;
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+
 .image-centre {
   display: flex;
-}
-.image-centre img {
   justify-content: center;
   align-items: center;
+}
+.image-centre img {
   width: 512px;
 }
 
@@ -193,8 +229,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 800;
-  font-size: 40px;
-  line-height: 47px;
+  font-size: 24px;
+  line-height: 28px;
   color: #000000;
   align-items: center;
   text-align: center;
@@ -203,8 +239,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 19px;
   color: #000000;
   margin-bottom: 48px;
   align-items: center;
@@ -233,17 +269,19 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 800;
-  font-size: 40px;
-  line-height: 47px;
+  font-size: 24px;
+  line-height: 28px;
   color: #000000;
   margin-bottom: 32px;
   margin-top: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
 } 
 
 .rejoindre .choix-jouer p{
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   text-align: justify;
@@ -272,6 +310,7 @@
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  transition: background 300ms;
 }
 .rejoindre .bouton i{
   height: 16px;
@@ -283,42 +322,242 @@
   flex-wrap: wrap;
   align-content: space-between;
   background: #EFEFEF;
+  margin-top: 24px;
 }
 
-.discord .gauche img {
-  margin-top: 17px;
-  margin-bottom: 38px;
-}
-
-.discord .gauche{
-  width: 100%;
-}
-
-
-footer {
-  height: 207px;
+.discord .acces-discord {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
 }
-.footer-menu{
-  background-color: rgba(0,0,0,0.4);
-  border: rgba(0,0,0,0.8);
-  padding-top: 16px;
-  padding-bottom: 16px;
+
+.discord .gauche {
+  width: 263px;
 }
 
-footer .gauche{
-  left: 0;
-  align-items: left;
+.discord .gauche img {
+  margin-top: 44px;
+  margin-bottom: 65px;
+  margin-left: 50px;
 }
 
-footer .droite {
-  align-items: right;
+.discord .droite {
+  position: relative;
+  width: 648px;
+  margin-top: 73px;
+  margin-left: 113px;
+}
+
+.discord .droite h1 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+
+.discord .droite h2 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+}
+
+.discord .margin {
+  border-top: #000000 solid 1px;
+  height: 1px;
+  margin-top: 24px;
+  margin-bottom: 26px;
+}
+
+.discord .droite p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  color: #000;
+}
+
+.discord div.bouton {
+  margin-top: 57px;
+  position: relative;
+  display: block;
+}
+
+.discord a.bouton {
+  background: #FFD97D;
+  border-radius: 10px;
+  padding: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000;
+  margin-top: 42px;
+  transition: background 300ms;
+  text-decoration: none;
+}
+
+.discord a.bouton:hover {
+  background: #ffe5a7;
+  transition: background 300ms;
+  cursor: pointer;
+}
+
+footer {
+  height: 175px;
+}
+
+.footer-menu {
+  background-color: rgb(51,51,51);
+  height: 96px;
+  width: 100%;
+  border-bottom: rgb(36,36,36) solid 1px;
+}
+
+.footer-menu .total-haut-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.footer-menu .gauche {
+  width: 128px;
+}
+
+.footer-menu .droite {
+  position: relative;
+  width: 859px;
+  margin-top: 36px;
+  margin-left: 37px;
+}
+
+.footer-menu .gauche img {
+  width: 96px;
+}
+
+.footer-menu .droite .menu {
+  margin-left: 69px;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: auto;
+  float: right;
+}
+
+.footer-menu .droite .menu li {
+  margin-left: 32px;
+  float: left;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-align: right;
+  transition: color 300ms;
 }
 
 .bas-footer {
-  background-color: rgba(0,0,0,0.4);
-  border-top: rgba(0,0,0,0.8);
+  background-color: rgb(51,51,51);
+  height: 80px;
+  width: 100%;
 }
 
+.bas-footer .total-bas-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.bas-footer .gauche {
+  height: 48px;
+  width: 316px;
+  margin-top: 16px;
+}
+
+.bas-footer .droite {
+  position: relative;
+  width: 164px;
+  margin-top: 24px;
+  margin-left: 512px;
+}
+
+.bas-footer .gauche h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.bas-footer .gauche p {
+  margin-top: 1px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.bas-footer .droite .menu {
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: auto;
+}
+
+.bas-footer .droite .menu li {
+  margin-right: auto;
+  margin-left: 32px;
+  float: left;
+  text-decoration: none;
+  list-style-type: none;
+  height: 32px;
+  transition: color 300ms;
+}
+
+.bas-footer .droite .menu a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.bas-footer .droite .menu li i {
+  font-size: 32px;
+}
+
+.bas-footer .droite .menu a:hover {
+  color: #A7A7A7;
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.footer-menu .droite .menu li:hover {
+  color: #A7A7A7;
+  cursor: pointer;
+  transition: color 300ms;
+}
+a.bouton:hover, .actualite .bouton a.bouton:hover {
+  background: #ffe5a7;
+  transition: background 300ms;
+  cursor: pointer;
+}
