@@ -13,13 +13,9 @@ function annoncements($title, $description, $date, $date_number,$annoncement_tit
             <a href="'.$forum_link.'" class="link-unstyled">'.$title.'</a>
         </div>
       </div>
-      <div class="baguette-text">
-        '.$announcement_description.'
-      </div>
       <div class="baguette-date">
         <span class="type '.$type.'">'.$type.'</span>
-        <span class="day">'.$date.'</span>
-        <span class="month">'.$date_number.'</span>
+        <span class="date">'.$date.' '.$date_number.'</span>
       </div>
     </div>
   </div>
