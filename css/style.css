@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  padding-left: 153px;
+  padding-right: 153px;
+}
+
+.header {
+  width: 100%;
+  height: 684px;
+}
+
+.header-haut {
+  display:flex;
+  width: 100%;
+  height: 58px;
+  background-color: rgba(0,0,0,0.60);
+  justify-content: center;
+}
+
+.global {
+  width:1440px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header .gauche {
+  float: left;
+  width: 50%;
+}
+
+.header .droite {
+  margin-left: 50%;
+}
+
+.count-joueur {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 5px;
+  width: 79px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.count-joueur p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  position: relative;
+  margin-left: 16px;
+}
+.count-joueur i {
+  color: #fff;
+  height: 18.58px;
+}
+
+.en-ligne {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.header-haut .bouton {
+  background-color: rgba(0,0,0,0.25);
+  padding-left: 24px; 
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  width: 100%;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #FFFFFF;
+}
+
+
+.header-menu {
+  background-color: rgba(0,0,0,0.32);
+  height: 68px;
+  width: 100%;
+}
+.header-menu .menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  list-style-type: none;
+}
+.header-menu .menu li {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.image-centre {
+  display: flex;
+}
+.image-centre img {
+  justify-content: center;
+  align-items: center;
+  width: 512px;
+}
+
+
+
+.actualite {
+  min-height: 609px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  background-color: #EFEFEF;
+}
+
+.actualite h1 {
+  margin-top: 32px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.actualite p {
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  color: #000000;
+}
+
+.actualite .bouton {
+  margin-top: 80px;
+  margin-bottom: 64px;
+  z-index: 1;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+.actualite .bouton a.bouton {
+  position: relative;
+  padding: 16px;
+  border-radius: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  background: #FFD97D;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+.rejoindre {
+  margin-top: 32px;
+  margin-bottom: 64px;
+  display: flex;
+}
+
+.rejoindre h1{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+}
+.rejoindre p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 48px;
+  align-items: center;
+  text-align: center;
+}
+
+.rejoindre .choix-jouer{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.rejoindre .gauche{
+  width: 49%;
+  background: rgba(255, 133, 133, 0.25);
+  border-right: 2px solid #FF8585;
+}
+
+.rejoindre .droite{
+  position: relative;
+  width: 49%;
+  background: rgba(255, 133, 133, 0.25);
+  border-left: 2px solid #FF8585;
+}
+
+.rejoindre .choix-jouer h1{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+  margin-bottom: 32px;
+  margin-top: 64px;
+} 
+
+.rejoindre .choix-jouer p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  color: #000000;
+  max-width: 415px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+} 
+
+.rejoindre a.bouton{
+  width: 208px;
+  background: #FFD97D;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 16px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.rejoindre .bouton i{
+  height: 16px;
+  width: 12px;
+}
+
+.discord {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background: #EFEFEF;
+}
+
+.discord .gauche img {
+  margin-top: 17px;
+  margin-bottom: 38px;
+}
+
+.discord .gauche{
+  width: 100%;
+}
+
+
+footer {
+  height: 207px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.footer-menu{
+  background-color: rgba(0,0,0,0.4);
+  border: rgba(0,0,0,0.8);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+footer .gauche{
+  left: 0;
+  align-items: left;
+}
+
+footer .droite {
+  align-items: right;
+}
+
+.bas-footer {
+  background-color: rgba(0,0,0,0.4);
+  border-top: rgba(0,0,0,0.8);
+}
+
