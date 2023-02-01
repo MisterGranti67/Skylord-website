@@ -18,28 +18,27 @@
             </div>
             <p class="en-ligne">Joueurs en ligne</p>
           </div>
-          <div class="droite">
+          <!-- <div class="droite">
             <div class="bouton" style="margin-right: 46px">
               <i class="fa-solid fa-right-to-bracket"></i>
               Connection
             </div>
             <div class="bouton">
-              <!-- Icone +person -->
               Déconnection
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="header-menu">
         <div class="container">
             <ul class="menu">
-              <li>accueil</li>
-              <li>vote et gagne</li>
-              <li>boutique</li>
-              <li>stats</li>
-              <li>banlist</li>
-              <li>règles</li>
-              <li>crypto</li>
+              <a href="https://skylord.fr"><li>accueil</li></a>
+              <a href="https://joueur.skylord.fr/vote"><li>vote et gagne</li></a>
+              <a href="https://joueur.skylord.fr/shop"><li>boutique</li></a>
+              <a href="https://skylord.fr/aldea/stats"><li>stats</li></a>
+              <a href="https://lody.skylord.fr"><li>banlist</li></a>
+              <a href="https://skylord.fr/annonce/règlement.php"><li>règles</li></a>
+              <a href="https://crypto.skylord.fr"><li>crypto</li></a>
             </ul>
         </div>
       </div>
