@@ -49,11 +49,12 @@ footer {
 }
 
 .header .droite {
-  margin-left: 50%;
   display: flex;
   flex-direction: row;
   position: relative;
   top: auto;
+  right: 0;
+  float: right;
 }
 
 .count-joueur {
@@ -75,7 +76,7 @@ footer {
   line-height: 28px;
   color: #FFFFFF;
   position: relative;
-  margin-left: 4px;
+  margin-left: 8px;
   margin-top: 7px;
   margin-bottom: 7px;
   margin-right: 16px;
@@ -96,6 +97,8 @@ footer {
   font-size: 24px;
   line-height: 28px;
   color: #fff;
+  margin-top: 15px;
+  margin-left: 8px;
 }
 
 .header-haut .bouton {
@@ -105,8 +108,6 @@ footer {
   padding-top: 8px;
   padding-bottom: 8px;
 
-  width: 100%;
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 800;
@@ -114,6 +115,8 @@ footer {
   line-height: 28px;
 
   color: #FFFFFF;
+  margin-top: 8px;
+  border-radius: 5px;
 }
 
 
