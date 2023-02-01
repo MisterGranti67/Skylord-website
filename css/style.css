@@ -42,10 +42,18 @@ footer {
 .header .gauche {
   float: left;
   width: 50%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: auto;
 }
 
 .header .droite {
   margin-left: 50%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: auto;
 }
 
 .count-joueur {
@@ -53,11 +61,10 @@ footer {
   margin-bottom: 8px;
   background-color: rgba(0,0,0,0.25);
   border-radius: 5px;
-  width: 79px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 16px;
-  padding-right: 16px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: auto;
 }
 
 .count-joueur p {
@@ -68,11 +75,18 @@ footer {
   line-height: 28px;
   color: #FFFFFF;
   position: relative;
-  margin-left: 16px;
+  margin-left: 4px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 16px;
 }
 .count-joueur i {
   color: #fff;
-  height: 18.58px;
+  height: 19.58px;
+  margin-left: 16px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  font-size: 16px;
 }
 
 .en-ligne {
@@ -279,13 +293,18 @@ footer {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  transition: background 300ms;
 }
 .rejoindre .bouton i{
   height: 16px;
   width: 12px;
 }
 
-
+.rejoindre a.bouton:hover {
+  background: #ffe5a7;
+  transition: background 300ms;
+  cursor: pointer;
+}
 
 .discord {
   display: flex;

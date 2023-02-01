@@ -5,6 +5,7 @@
     <title>Accueil - Skylord</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/da8f9491f0.js" crossorigin="anonymous"></script>
+    <script src="js/player-counter.js"></script>
   </head>
   <body>
     <div class="header">
@@ -13,7 +14,7 @@
           <div class="gauche">
             <div class="count-joueur">
               <i class="fa-solid fa-user"></i>
-              <p>?</p>
+              <p data-playercounter-ip="play.skylord.fr">X</p>
             </div>
             <p class="en-ligne">Joueurs en ligne</p>
           </div>
