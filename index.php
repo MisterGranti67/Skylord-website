@@ -1,7 +1,20 @@
+<?php include('utils/annonce.php'); ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Skylord est un serveur minecraft comportant +30000 joueurs inscrits. Choisissez votre Serveur, Skyblock ou survie slimefun ?">
+    <meta name="author" content="MrBaguette07">
+
+    <meta property="og:title" content="Accueil - Skylord">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skylord.fr">
+    <meta property="og:image" content="https://skylord.fr/grec/logo.png">
+    <meta property="og:description" content="Skylord est un serveur minecraft comportant +30000 joueurs inscrits. Choisissez votre Serveur, Skyblock ou survie slimefun ?">
+    <meta property="og:site_name" content="Skylord">
+
+    <link rel="shortcut icon" href="https://skylord.fr/grec/logo.png">
     <title>Accueil - Skylord</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/da8f9491f0.js" crossorigin="anonymous"></script>
@@ -52,9 +65,13 @@
       <div class="container">
         <h1>Les actualités du serveur</h1>
         <p>Suivez nos actualités en direct !</p>
-        <!-- PHP INSERT LES ACTUALITES-->
+        <div class="lesAnnonces">
+          <?php
+              createAnnouncements();
+          ?>
+        </div>
         <div class="bouton"> 
-          <a class="bouton">Voir plus d'actualités</a>
+          <a class="bouton" id="arata-mult">Voir plus d'actualités</a>
         </div>
       </div>
     </section>
@@ -104,4 +121,6 @@
     </section>
   </body>
   <?php include('utils/footer.php'); ?>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </html>
