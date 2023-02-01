@@ -44,7 +44,13 @@
       </div>
       <div class="header-menu">
         <div class="container">
+          <div class="menuSkylord">
             <ul class="menu">
+              <div class="mobileButton">
+                  <button class="baguette-js--openNav">
+                      <i class="fas fa-bars"></i>
+                  </button>
+              </div>
               <a href="https://skylord.fr"><li>accueil</li></a>
               <a href="https://joueur.skylord.fr/vote"><li>vote et gagne</li></a>
               <a href="https://joueur.skylord.fr/shop"><li>boutique</li></a>
@@ -53,6 +59,7 @@
               <a href="https://skylord.fr/annonce/règlement.php"><li>règles</li></a>
               <a href="https://crypto.skylord.fr"><li>crypto</li></a>
             </ul>
+          </div>
         </div>
       </div>
       <div class="container">
@@ -60,6 +67,22 @@
           <img src="https://skylord.fr/logo.png">
         </div>
       </div>
+    </div>
+    <div id="baguette-overlay"></div>
+    <div id="baguette-mobileNav">
+        <div class="baguette-navHeader">
+            Menu
+            <button class="baguette-js--closeNav"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="baguette-navLinks">
+          <a class="link" href="https://skylord.fr">accueil</a>
+          <a class="link" href="https://joueur.skylord.fr/vote">vote et gagne</a>
+          <a class="link" href="https://joueur.skylord.fr/shop">boutique</a>
+          <a class="link" href="https://skylord.fr/aldea/stats">stats</a>
+          <a class="link" href="https://lody.skylord.fr">banlist</a>
+          <a class="link" href="https://skylord.fr/annonce/règlement.php">règles</a>
+          <a class="link" href="https://crypto.skylord.fr">crypto</a>
+        </div>
     </div>
     <section class="actualite">
       <div class="container">
@@ -94,7 +117,7 @@
             <h1>Tu n'as pas acheté Minecraft ?</h1>
             <p>Télécharge un launcher comme TLauncher en version JAVA de Minecraft, clique sur l’onglet “multijoueur”, ajoute un “nouveau serveur” et, rentre l’adresse de connexion ci-dessous.</p>
             <div class="bouton">
-              <a class="bouton">Télécharger</a>
+              <a href="https://tlauncher.org/en/" class="bouton">Télécharger</a>
             </div>
           </div>
         </div>
